@@ -32,4 +32,13 @@ sourceSets {
     }
 }
 
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'ProjectAnalyzer'
+        )
+    }
+}
+
+
 mainClassName = "ProjectAnalyzer"

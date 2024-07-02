@@ -24,6 +24,8 @@ public class ProjectAnalyzer {
         EXTENSION_LANGUAGE_MAP.put("scss", "SCSS");
         EXTENSION_LANGUAGE_MAP.put("js", "JavaScript");
         EXTENSION_LANGUAGE_MAP.put("ts", "TypeScript");
+                EXTENSION_LANGUAGE_MAP.put("go", "GoLang");
+                EXTENSION_LANGUAGE_MAP.put("py", "Python");
 
         IGNORE_FOLDERS.add("node_modules");
         IGNORE_FOLDERS.add("__pycache__");
