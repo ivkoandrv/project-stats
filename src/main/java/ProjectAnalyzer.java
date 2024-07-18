@@ -32,6 +32,7 @@ public class ProjectAnalyzer {
         IGNORE_FOLDERS.add(".idea");
         IGNORE_FOLDERS.add(".git");
         IGNORE_FOLDERS.add("public");
+        IGNORE_FOLDERS.add("dist");
     }
 
     public static void main(String[] args) {
@@ -107,6 +108,11 @@ public class ProjectAnalyzer {
                         language = detectVueTypescript(file) ? "VueTS" : "VueJS";
 
                     }
+
+                    if(extension.equals("js")){
+                        System.out.println(file.getAbsolutePath());
+                    }
+
                     LANGUAGE_FILE_COUNT.put(language, LANGUAGE_FILE_COUNT.getOrDefault(language, 0) + 1);
 
 
